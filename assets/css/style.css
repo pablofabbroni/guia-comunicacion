@@ -897,6 +897,33 @@ body.no-scroll {
         font-size: 1.8rem;
     }
 
+    .testimonial-inner {
+        padding: 32px 20px;
+        border-radius: var(--radius-md);
+    }
+
+    .testimonial-inner p {
+        font-size: 1.05rem;
+        margin-bottom: 24px;
+        line-height: 1.5;
+    }
+
+    .testimonial-inner p::before {
+        top: -15px;
+        left: -10px;
+        font-size: 2.5rem;
+    }
+
+    .testimonial-inner p::after {
+        bottom: -45px;
+        right: -10px;
+        font-size: 2.5rem;
+    }
+
+    .testimonial-inner h4 {
+        font-size: 0.95rem;
+    }
+
     /* --- Offer Module --- */
     .offer-section {
         padding: 40px 0 80px;
@@ -906,9 +933,11 @@ body.no-scroll {
         padding: 40px 16px;
         border-radius: var(--radius-md);
         width: calc(100% - 32px);
-        margin: 16px auto;
+        margin: 32px auto 16px;
+        /* Added more top margin for badge space */
         max-width: 100%;
-        overflow: hidden;
+        overflow: visible;
+        /* Changed to visible to show badge */
     }
 
     .offer-title {
