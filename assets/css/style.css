@@ -905,9 +905,10 @@ body.no-scroll {
     .offer-card {
         padding: 40px 16px;
         border-radius: var(--radius-md);
-        width: auto;
-        margin: 0 4px;
+        width: calc(100% - 32px);
+        margin: 16px auto;
         max-width: 100%;
+        overflow: hidden;
     }
 
     .offer-title {
@@ -937,9 +938,12 @@ body.no-scroll {
     }
 
     .urgency-badge {
-        font-size: 0.8rem;
-        padding: 10px 20px;
-        top: -18px;
+        font-size: 0.75rem;
+        padding: 8px 16px;
+        top: -15px;
+        white-space: nowrap;
+        width: auto;
+        max-width: 90%;
     }
 }
 
